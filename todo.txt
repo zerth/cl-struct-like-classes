@@ -1,0 +1,5 @@
+- when defining a subclass of a struct-like class, inspect the
+superclasses for additional slot names for which accessors should be
+defined.  this should happen during class finalization to handle
+forward references and redefinition of superclasses.  should probably
+use a MOP-based solution instead of messing with metaclasses.
