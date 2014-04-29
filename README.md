@@ -14,7 +14,7 @@ provided by DEFSTRUCT.
 
 Thus, one can do:
 
-```Common Lisp
+```
 (define-struct-like-class connection ()
   (server *server*)
   fd
@@ -26,7 +26,7 @@ Thus, one can do:
 instead of:
 
 
-```Common lisp
+```
 (defclass connection ()
   (server :initform *server*
           :accessor connection-server)
