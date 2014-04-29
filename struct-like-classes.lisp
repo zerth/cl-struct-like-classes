@@ -11,7 +11,7 @@
    :define-struct-like-bound-class))
 
 
-(in-package :struct-like-classes)
+(in-package :net.mwatters.struct-like-classes)
 
 
 (define-method-combination %appending% (&optional (order :most-specific-first))
