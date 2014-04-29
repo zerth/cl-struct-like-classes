@@ -28,16 +28,16 @@ instead of:
 
 ```
 (defclass connection ()
-  (server :initform *server*
-          :accessor connection-server)
-  (fd :initform nil
-      :accessor connection-fd)
-  (remote-peer :initform nil
-               :accessor connection-remote-peer)
-  (remote-port :initform nil
-               :accessor connection-remote-port)
-  (forwarded-for :initform nil
-                 :accessor connection-forwarded-for))
+  ((server :initform *server*
+           :accessor connection-server)
+   (fd :initform nil
+       :accessor connection-fd)
+   (remote-peer :initform nil
+                :accessor connection-remote-peer)
+   (remote-port :initform nil
+                :accessor connection-remote-port)
+   (forwarded-for :initform nil
+                  :accessor connection-forwarded-for)))
 
 (defgeneric connection-p (obj)
   (:method ((obj connection)) t)
